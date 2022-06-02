@@ -1,0 +1,755 @@
+/* Variable CSS */
+:root{
+--black: #000000;
+--white: #ffffff;
+--light-white: #f5f5f5;
+--orange: #da7a36;
+--light-orange: #ff8b38;
+--gray: #7f7f7f;
+--light-yellow: #ead1a2;
+--deep-gray: #333333;
+--light-gray: #cdcdce;
+--light-secondary-gray: #d6d6d6;
+--another-light-gray: #c2c2c2;
+--shadow: #c2bebe;
+--shadow-secondary: #989393;
+--price-font: #959595;
+--font-primary: 'Open Sans', sans-serif;
+--font-secondary: 'Raleway', sans-serif;
+}
+
+/*==============  Common CSS start  ============*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+img{
+    max-width: 100%;
+}
+/*==============  Common CSS End  ===============*/
+
+/*==============  Header area start  ===============*/
+.header-area{
+    width: 100%;
+    background-color: var(--black); 
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.logo{
+    width: 150px;
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li{
+    display: inline-block;
+    margin-right: 46px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: var(--gray);
+    font-family: var(--font-primary);
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.navbar ul li:last-child{
+    margin-right: 8px;
+}
+.navbar ul li a:hover{
+    color: var(--light-yellow);
+}
+
+.banner-area{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("images/banner.jpg");
+    width: 100%;
+    height: calc(80vh - 71px);
+    background-size: cover;
+    background-position: center;
+}
+.col-2{
+    flex: 1 1 50%;
+    min-width: 400px;
+    padding-right: 10px;
+}
+.content-logo{
+    font-family: var(--font-primary);
+    font-size: 80px;
+    font-weight: 800;
+    color: var(--white);
+    margin-top: 80px;
+    margin-bottom: 15px;
+}
+.content-logo span{
+    font-weight: 300;
+    color: var(--orange);
+}
+.content-head{
+    font-size: 36px;
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    color: var(--white);
+    position: relative;
+    margin-bottom: 60px;
+}
+.content-head::after{
+    content: "";
+    width: 65px;
+    height: 2px;
+    background-color: var(--white);
+    position: absolute;
+    left: 2px;
+    bottom: -30px;
+    display: inline-block;
+}
+.content-paragraph{
+    color: var(--light-gray);
+    font-size: 16px;
+    font-family: var(--font-secondary);
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin-bottom: 30px;
+}
+.download-btn{
+    font-family: var(--font-primary);
+    display: inline-block;
+    color: var(--light-white);
+    font-size: 15px;
+    padding: 10px 30px;
+    border: 2px solid var(--light-white);
+    text-decoration: none;
+}
+.col-2 .form-area{
+    width: 360px;
+    height: 360px;
+    background-color: var(--white);
+    margin-left: auto;
+    margin-top: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.col-2 .form-area .form-header{
+    font-family: var(--font-primary);
+    font-weight: 700;
+    padding: 14px 0;
+    text-align: center;
+    width: 100%;
+    background-color: var(--light-white);
+    font-size: 20px;
+}
+.col-2 .form-area .form-header span{
+    color: var(--light-orange);
+}
+.col-2 .form-area form{
+    width: 285px;
+    margin: 0px auto 50px;    
+}
+.col-2 .form-area form input{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid var(--light-secondary-gray);
+    font-size: 14px;
+    color: var(--another-secondary-gray);
+    margin: 24px 0;
+}
+.col-2 .form-area .form-footer{
+    color: var(--white);
+    font-family: var(--font-primary);
+    font-weight: 700;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    background-color: var(--light-orange);
+    font-size: 15px;
+}
+/*==============  Header area End  ===============*/
+
+/*==============  Social Media Start  ===============*/
+.social-media{
+    padding: 20px 0;
+    background-color: var(--white);
+    box-shadow: 0px 1px 5px var(--shadow-secondary);
+    margin-bottom: 5px;
+}
+.social-left{
+    flex: 1 1 370px;
+    font-family: var(--font-primary);
+}
+.social-left h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--deep-gray);
+}
+.social-left p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+}
+.social-right{
+    flex: 1 1 700px;
+    display: flex;
+}
+.social-right ul{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.social-right ul li{
+    display: inline-block;
+    padding-top: 5px;
+}
+.social-right ul li a{
+    color: var(--light-secondary-gray);
+    font-size: 48px;
+    margin: 0 25px;
+}
+
+/*==============  Social Media End  ===============*/
+
+/*==============  Tab Section Start  ===============*/
+.tab-section{
+    padding: 150px 0 115px;
+    background-color: var(--light-white);
+}
+.tabs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.tab-items{
+    width: 110px;
+}
+.tab-items .tab1,.tab-items .tab2,.tab-items .tab3{
+    background-color: var(--deep-gray);
+    padding: 44px 30px;
+    margin-bottom: 1px;
+    font-family: var(--font-primary);
+    font-weight: 700;
+    color: var(--white);
+    border-radius: 3px;
+}
+.tab-hover:hover{
+    background-color: var(--light-orange);
+}
+
+.tab-content{
+    max-width: 420px;
+    padding: 5px;
+    font-family: var(--font-primary);
+}
+.tab-content h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 25px;
+}
+.tab-content p{
+    font-size: 14px;
+    color: var(--gray);
+    margin: 25px 0;
+}
+.tab-content a{
+    display: inline-block;
+    background-color: var(--light-orange);
+    padding: 11px 21px;
+    color: var(--white);
+    border-radius: 3px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+/*==============  Tab Section End  ===============*/
+
+/*==============  Sub list section start  ===============*/
+.sub-list-section{
+    background-color: var(--white);
+    padding: 100px 0;
+    font-family: var(--font-primary);
+}
+.sub-col{
+    flex: 1 1 47%;
+    min-width: 400px;
+    padding-right: 10px;
+}
+.sub-col img{
+    box-shadow: 10px 30px 50px var(--shadow);
+}
+.sub-right{
+    padding-left: 50px;
+}
+.sub-col h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--deep-gray);
+    margin-bottom: 56px;
+    position: relative;
+}
+.sub-col h3::after{
+    content: "";
+    width: 65px;
+    height: 2px;
+    background-color: var(--light-orange);
+    position: absolute;
+    left: 2px;
+    bottom: -28px;
+    display: inline-block;
+}
+.sub-col .sub-col-descriptions{
+    font-size: 14px;
+    color: var(--gray);
+    margin-top: 25px;
+    line-height: 1.2rem;
+}
+.sub-col .title{
+    display: flex;
+}
+.sub-col .title{
+    margin-top: 40px;
+}
+.sub-col .title .icon{
+    border: 2px solid var(--light-orange);
+    border-radius: 50%;
+    color: var(--light-orange);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    flex-shrink: 0;
+    margin-right: 25px;
+}
+.sub-col .title h4{
+    color: var(--deep-gray);
+    font-size: 14px;
+}
+
+.sub-col .title p{
+    font-size: 14px;
+    color: var(--gray);
+    line-height: 1.2rem;
+}
+/*==============  Sub list section end  ===============*/
+
+/*==============  Standart section start  ===============*/
+.standard-section{
+    background-color: var(--light-white);
+    padding: 90px 0;
+    font-family: var(--font-primary);
+}
+.standard-col{
+    flex: 0 1 43%;
+    min-width: 400px;
+}
+.standard-col h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--deep-gray);
+    margin-bottom: 56px;
+    position: relative;
+}
+.standard-col h3::after{
+    content: "";
+    width: 65px;
+    height: 2px;
+    background-color: var(--light-orange);
+    position: absolute;
+    left: 2px;
+    bottom: -28px;
+    display: inline-block;
+}
+.standard-col p{
+    font-size: 14px;
+    color: var(--gray);
+    line-height: 1.2rem;
+}
+.standard-col img{
+    box-shadow: 10px 30px 50px var(--shadow-secondary);
+}
+/*==============  Standart section end  ===============*/
+
+/*==============  Awesome section end  ===============*/
+.awesome-section{
+    padding: 100px 0;
+    background-color: var(--white);
+    text-align: center;
+}
+.awesome-section h1{
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 56px;
+    position: relative;
+}
+.awesome-section h1::after{
+    content: "";
+    width: 65px;
+    height: 2px;
+    background-color: var(--light-orange);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -28px;
+    display: inline-block;
+}
+.awesome-section .awesome-paragraph{
+    font-size: 14px;
+    color: var(--gray);
+    font-family: var(--font-primary);
+    margin-bottom: 75px;
+}
+.awesome-col{
+    flex: 0 1 32.5%;
+    max-width: 360px;
+}
+.awesome-col .icon-box{
+    border: 2px solid var(--light-orange);
+    border-radius: 50%;
+    color: var(--light-orange);    
+    margin: 0 auto 25px;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 30px;
+    flex-shrink: 0;
+}
+.awesome-col h3{
+    font-family: var(--font-primary);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--deep-gray);
+    margin-bottom: 25px;
+}
+.awesome-col p{
+    font-size: 14px;
+    color: var(--gray);
+    font-family: var(--font-primary);
+}
+/*==============  Awesome section end  ===============*/
+
+/*==============  Pricing section start ===============*/
+.pricing-section{
+    padding: 90px 0;
+    background-color: var(--light-white);
+    text-align: center;
+}
+.pricing-section h1{
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 56px;
+    position: relative;
+}
+.pricing-section h1::after{
+    content: "";
+    width: 65px;
+    height: 2px;
+    background-color: var(--light-orange);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -28px;
+    display: inline-block;
+}
+.pricing-section .pricing-paragraph{
+    font-size: 14px;
+    color: var(--gray);
+    font-family: var(--font-primary);
+    margin-bottom: 75px;
+}
+.pricing-section h3, .price{
+    font-family: var(--font-primary);
+    background-color: var(--deep-gray);
+    width: 340px;
+}
+.pricing-section h3{
+    background-color: var(--deep-gray);
+    color: var(--white);
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--white);
+}
+.pricing-section .price{
+    padding: 5px 0 20px;
+}
+.pricing-section .small-card .price{
+    border-bottom: 5px solid var(--light-orange);
+} 
+.pricing-section .price .italic-paragraph{
+    color: var(--price-font);
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 700;
+}
+.popular-text{
+    font-family: var(--font-primary);
+    background-color: var(--light-orange);
+    padding: 10px 0;
+    font-weight: 700;
+    color: var(--white);
+    font-size: 14px;
+}
+.price h2{
+    font-family: var(--font-secondary);
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--white);
+
+}
+.price span{
+    font-family: var(--font-secondary);
+    font-weight: 800;
+    font-size: 60px;
+    letter-spacing: -5px;
+    margin-bottom: 10px;
+}
+.price .largest{
+    font-size: 70px;
+}
+.price .down{
+    display: inline-block;
+    transform: translateY(8px);
+
+}
+.service-details{
+    font-family: var(--font-primary);
+    font-size: 14px;
+    color: var(--gray);
+    padding: 12px 0;
+    margin-bottom: 1px;
+    border: none;
+    background-color: var(--white);
+}
+.large-card{
+    transform: translateY(-25px);
+}
+/*==============  Pricing section  end ================*/
+
+/*==============  Comments section  start ================*/
+.comments-section{
+    padding: 100px 0;
+    background-color: var(--white);
+}
+.comments-section h1{
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 56px;
+    position: relative;
+    text-align: center;
+}
+.comments-section h1::after{
+    content: "";
+    width: 65px;
+    height: 2px;
+    background-color: var(--light-orange);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -28px;
+    display: inline-block;
+}
+.comments-section .comment-info{
+    font-size: 14px;
+    color: var(--gray);
+    font-family: var(--font-primary);
+    text-align: center;
+    margin-bottom: 55px;
+}
+.comment-col{
+    flex: 0 1 300px;
+    padding: 10px;
+}
+.comment-col .comment{
+    font-family: var(--font-primary);
+    color: var(--gray);
+    font-style: italic;
+    padding: 8px;
+    text-align: left;
+    background-color: var(--light-white);
+    font-size: 14px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+}
+.customer{
+    display: flex;
+}
+.customer-pic{
+    margin-right: 20px;
+}
+.customer-identity h2{
+    font-size: 20px;
+    font-family: var(--font-primary);
+    color: var(--deep-gray);
+}
+.customer-identity p{
+    font-family: var(--font-primary);
+    text-align: left;
+    font-size: 14px;
+    color: var(--gray);
+}
+/*==============  Comments section  end ==================*/
+
+/*==============  Stylish section  start ==================*/
+.stylish-section{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("images/download.jpg");
+}
+.stylish-section h1{
+    padding-top: 75px;
+    font-family: var(--font-secondary);
+    color: var(--white);
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 56px;
+    position: relative;
+    text-align: center;
+}
+.stylish-section h1::after{
+    content: "";
+    width: 65px;
+    height: 2px;
+    background-color: var(--white);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -28px;
+    display: inline-block;
+}
+.stylish-section p{
+    font-size: 16px;
+    color: var(--light-gray);
+    font-family: var(--font-secondary);
+    text-align: center;
+    padding-bottom: 35px;
+}
+.btn-wrapper{
+    padding-bottom: 60px;
+}
+.stylish-section .btn-wrapper .downlsoad-btn{
+    font-family: var(--font-primary);
+    display: inline-block;
+    color: var(--light-white);
+    font-size: 15px;
+    padding: 10px 30px;
+    border: 2px solid var(--light-white);
+    text-decoration: none;
+    transform: translateX(-50%);
+    margin-left: 50%;
+}
+/*==============  Stylish section  end   ==================*/
+
+/*============== Contact section  start    ================ */
+.contact-section{
+    padding: 100px;
+    background-color: var(--white);
+}
+.contact-section h3{
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 56px;
+    position: relative;
+    text-align: center;
+}
+.contact-section h3::after{
+    content: "";
+    width: 65px;
+    height: 2px;
+    background-color: var(--light-orange);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -28px;
+    display: inline-block;
+}
+.contact-section p{
+    font-size: 14px;
+    color: var(--gray);
+    font-family: var(--font-secondary);
+    text-align: center;
+    padding-bottom: 35px;
+}
+.contact-part{
+    flex: 0 1 47%;
+}
+/* .contact-part form label{
+    font-size: 14px;
+    font-family: var(--font-primary);
+    color: var(--light-gray);
+}  */
+.contact-part form input{
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-bottom: 30px;
+    padding: 8px;
+    border-bottom: 1px solid var(--light-gray);
+}
+.contact-part form input::placeholder{
+    color: var(--another-light-gray);
+}
+.contact-part textarea{
+    border: none;
+    width: 100%;
+    resize: none;
+    border-bottom: 1px solid var(--light-gray);
+}
+.contact-part label{
+    color: var(--another-light-gray);
+    font-family: var(--font-primary);
+    font-size: 14px;
+}
+.contact-section .contact-btn{
+    font-family: var(--font-primary);
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 22px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: var(--orange);
+    margin: 0 auto;
+    color: var(--white);
+    text-decoration: none;
+}
+/*============== Contact section  end    ================== */
+
+/*============== Footer section  start    ================== */
+.footer-section{
+    background-color: var(--black);
+    padding: 12px 0;    
+    text-align: center;
+}
+.footer-section ul li{
+    display: inline-block;
+    padding: 5px 15px;
+}
+.footer-section ul li a{
+    color: var(--light-gray);    
+    text-decoration: none;
+    display: block;
+    font-size: 24px;
+}
+.copyright-text{
+    font-size: 12px;
+    font-family: var(--font-primary);
+    color: var(--gray);
+    font-weight: 700;
+}
+/*============== Footer section  end    ==================== */
+
